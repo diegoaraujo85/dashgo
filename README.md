@@ -41,6 +41,8 @@ Projeto desenvolvido durante curso Ignite da rocketseat
 - [Prettier]()
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [MirageJS](https://miragejs.com)
+- [faker](https://fakerjs.dev/)
 
 ## Getting Started <a name = "getting_started"></a>
 
