@@ -9,7 +9,9 @@ export type User = {
 }
 
 export function makeServer(){
-  const server = createServer({
+  const fakeServer = createServer({
+    serializers: {},
+
     models:{
       user: Model.extend<Partial<User>>({}),
     },
@@ -49,6 +51,9 @@ export function makeServer(){
           'x-total-count': String(total),
         }, {users})
       });
+
+      this.get('/users/:id');
+
       this.post('/users');
 
       this.namespace = '';
@@ -56,5 +61,5 @@ export function makeServer(){
     }
   })
 
-  return server;
+  return fakeServer;
 }
